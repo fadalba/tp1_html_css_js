@@ -1,0 +1,78 @@
+
+body{
+    background-color: rgba(78, 8, 230, 0.876);
+
+}
+.bloc{
+   
+    width: 48%;     /* la largeur de notre bloc*/
+    height: 300px; /* la longeur de notre bloc*/
+
+    background-color:  rgb(203, 206, 222);
+    justify-content: center;
+    border: 2px solid black;
+    margin-bottom: 1rem ;/* pour laisser de l'espace entre les blocs*/
+}
+
+.color {
+    background-color: blueviolet;
+}
+
+.p {
+    color: #fff;
+}
+
+
+.container{   /* */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* pour séparer les 2 divs des blocs*/
+}
+
+.para{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    writing-mode: vertical-lr; /* pour l'écriture en verticale des blocs*/
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+}
+                                                /* Responsivité*/
+
+@media screen and (max-width: 600px)
+{
+    #container{
+        flex-direction: column;
+    }
+    .bloc {
+        width: 100%;
+    }
+}
+    
+/* Partie Formulaire de contact
+......................................................................................................................
+......................................................................................................................*/
+#formulaire
+{
+display: flex;
+flex-direction: column;
+width: 500px;
+margin: auto;
+}
+button{
+    width: 200px;
+}
+@media screen and (max-widht:480px) {
+
+    form .form-inline {
+        grid-gap: unset;
+        grid-template-columns: 1fr;
+
+    }
+
+    form button {
+width: 100%;
+    }
+}
+
