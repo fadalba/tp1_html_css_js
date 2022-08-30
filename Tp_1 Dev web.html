@@ -32,8 +32,6 @@
 
 </section>
 
-
-
   <!-- création formulaire
   ................................................................................................................................
 ..................................................................................................................................-->
@@ -47,18 +45,24 @@
       <input type="text" class="form-control" id="nom">
       <div id="nom-erreur"></div>
       <label for="email">mail</label>
-      <input type="mail" class="form-control" id="email"> 
+      <input type="email" class="form-control" required id="email"> 
       <div id="email-erreur"></div>
       <label for="phone">téléphone</label>
       <input type="phone" class="form-control" id="tel">
       <div id="tel-erreur"></div> <br/>
       <textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
-      <div id="message-erreur"></div>
+      <div id="message-erreur"></div> <br/>
       <button type="submit" id="submit">soumettre</button>
 
   </form>
   </div>
 
+<!-- div pour la Récupération des données-->
+
+  <div id="resultat"></div>
+
+  
+  
   <!-- on appel la fonction javascript-->
  
   <script src="index.js"></script>
